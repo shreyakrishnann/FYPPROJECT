@@ -17,7 +17,7 @@ const SignUp = () => {
     const handleSubmit = async () => {
         setLoading(true);
         //const api = 'http://localhost:5000/register';
-        const api = 'https://ecosustain-backend.onrender.com/register';
+        const api = 'https://fypproject-backend.onrender.com/register';
 
         if (password === confirmPassword) {
             setError(null);

@@ -14,7 +14,7 @@ const ProductDetails = () => {
     const [loading, setLoading] = useState(false);
 
     const fetchdata = async () => {
-        const api = 'https://ecosustain-backend.onrender.com/ac-details/' + id;
+        const api = 'https://fypproject-backend.onrender.com/ac-details/' + id;
         try {
             const response = await fetch(api, {
                 method: 'GET',
@@ -44,7 +44,7 @@ const ProductDetails = () => {
             return;
         }
         setLoading(true);
-        const api = 'https://ecosustain-backend.onrender.com/createreviews';
+        const api = 'https://fypproject-backend.onrender.com/createreviews';
         const userId = localStorage.getItem('userid');
         if (!userId || userId.length === 0 || userId === 'undefined') {
             alert("Something went wrong,Please Login...");
@@ -72,7 +72,7 @@ const ProductDetails = () => {
 
     const deleteReview = async (id) => {
         if (window.confirm("Are you sure you want to delete this review?")) {
-            const api = 'https://ecosustain-backend.onrender.com/deletereview/' + id;
+            const api = 'https://fypproject-backend.onrender.com/deletereview/' + id;
             const res = await fetch(api, {
                 method: 'DELETE',
                 headers: {

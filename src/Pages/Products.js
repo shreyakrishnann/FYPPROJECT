@@ -23,7 +23,7 @@ const Products = () => {
 
     const fetchdata = async () => {
         setFetchTime(true);
-        const api = 'https://ecosustain-backend.onrender.com/ac-details';
+        const api = 'https://fypproject-backend.onrender.com/ac-details';
         try {
             const response = await fetch(api, {
                 method: 'GET',

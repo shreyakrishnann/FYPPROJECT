@@ -16,7 +16,7 @@ const SignIn = () => {
     const handleSubmit = async (e) => {
         setLoading(true);
         //const api = 'http://localhost:5000/login';
-        const api = 'https://ecosustain-backend.onrender.com/login';
+        const api = 'https://fypproject-backend.onrender.com/login';
         if (email && password) {
             setError(null);
             try {
